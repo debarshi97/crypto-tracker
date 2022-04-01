@@ -22,6 +22,8 @@ const SelectButton = ({ children, selected, onClick }) => {
           width: "fit-content",
           display: "flex",
           justifyContent: "space-around",
+          paddingLeft: 10,
+          paddingRight: 10,
       }
     },
   }));
