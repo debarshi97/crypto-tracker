@@ -24,6 +24,7 @@ const SelectButton = ({ children, selected, onClick }) => {
           justifyContent: "space-around",
           paddingLeft: 10,
           paddingRight: 10,
+          margin: 10,
       }
     },
   }));
