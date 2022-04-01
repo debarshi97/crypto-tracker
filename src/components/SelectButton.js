@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/core";
 
 const SelectButton = ({ children, selected, onClick }) => {
-  const useStyles = makeStyles({
+  const useStyles = makeStyles((theme) => ({
     selectbutton: {
       border: "1px solid gold",
       borderRadius: 5,
@@ -18,9 +18,13 @@ const SelectButton = ({ children, selected, onClick }) => {
         color: "black",
       },
       width: "22%",
-      //   margin: 5,
+      [theme.breakpoints.down("sm")] : {
+          width: "fit-content",
+          display: "flex",
+          justifyContent: "space-around",
+      }
     },
-  });
+  }));
 
   const classes = useStyles();
 
