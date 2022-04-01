@@ -22,7 +22,7 @@ const CoinPage = () => {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
-  console.log(coin);
+  // console.log(coin);
 
   useEffect(() => {
     fetchCoin();
